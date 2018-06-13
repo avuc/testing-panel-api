@@ -7,7 +7,14 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "nodemon .",
+    "start:prod": "npm run migrate && NODE_ENV=production node .",
+    "start": "npm run docker:up && npm run migrate && NODE_ENV=development nodemon .",
+    "migrate": "npm run migrate:update",
+    "migrate:update": "node ./server/auto-update.js",
+    "migrate:reset": "node ./server/auto-migrate.js",
+    "docker:up": "(cd ./docker; sudo docker-compose up -d)",
+    "docker:build": "(cd ./docker; sudo docker-compose build)",
+    "docker:down": "(cd ./docker; sudo docker-compose down)",
     "posttest": "npm run lint && nsp check"
   },
   "dependencies": {
