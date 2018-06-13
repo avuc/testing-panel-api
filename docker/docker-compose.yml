@@ -11,7 +11,7 @@ services:
       - MYSQL_DATABASE=testing-panel
       - MYSQL_USER=testing-panel
       - MYSQL_PASSWORD=hola
-      restart: always
+    restart: always
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:4.7
     ports:
