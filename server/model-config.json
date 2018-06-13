@@ -36,7 +36,7 @@
     "public": false
   },
   "page": {
-    "dataSource": "db",
+    "dataSource": "mysql",
     "public": true
   }
 }
