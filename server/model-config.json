@@ -39,6 +39,10 @@
     "dataSource": "mysql",
     "public": true
   },
+  "post": {
+    "dataSource": "mysql",
+    "public": true
+  },
   "menu": {
     "dataSource": "mysql",
     "public": true
