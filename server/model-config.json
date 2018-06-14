@@ -38,5 +38,9 @@
   "page": {
     "dataSource": "mysql",
     "public": true
+  },
+  "menu": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
