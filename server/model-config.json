@@ -42,5 +42,9 @@
   "menu": {
     "dataSource": "mysql",
     "public": true
+  },
+  "usuario": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
