@@ -1,0 +1,52 @@
+{
+  "name": "form",
+  "plural": "forms",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "area": {
+      "type": "string",
+      "required": true
+    },
+    "message": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "contact-details": {
+      "type": "hasMany",
+      "model": "contact-detail",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "contact-detail": {
+      "type": "belongsTo",
+      "model": "contact-detail",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
