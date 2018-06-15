@@ -1,0 +1,41 @@
+{
+  "name": "social",
+  "plural": "socials",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "email": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "linked-in": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "cards": {
+      "type": "hasOne",
+      "model": "card",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "card": {
+      "type": "belongsTo",
+      "model": "card",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
