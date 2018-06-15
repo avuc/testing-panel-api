@@ -50,5 +50,33 @@
   "usuario": {
     "dataSource": "mysql",
     "public": true
+  },
+  "blog": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "information": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "detail": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "card": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "social": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "contact-detail": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "form": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
